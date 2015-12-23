@@ -1,0 +1,14 @@
+# Gradle
+.gradle
+build/
+
+# Intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# https://github.com/openzipkin/zipkin/issues/534
+zipkin-collector-service/zipkin.db
+zipkin-query-service/zipkin.db
+/.nb-gradle/

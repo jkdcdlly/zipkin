@@ -1,0 +1,15 @@
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile "com.twitter:scrooge-core_${scalaInterfaceVersion}:${commonVersions.scrooge}"
+    compile project(':zipkin-scrooge')
+    compile project(':zipkin-common')
+    compile group: 'org.apache.hbase', name: 'hbase-client', version: '0.99.2'
+
+    testCompile project(':zipkin-common').sourceSets.test.output
+    testCompile "org.apache.hbase:hbase-testing-util:0.99.2"
+
+}

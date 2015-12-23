@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+TRANSPORT_TYPE="${TRANSPORT_TYPE:-http}" ./gradlew :zipkin-web:run
